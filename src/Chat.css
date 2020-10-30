@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.75;
+  background-color: #36393f;
+  height: 100vh;
+}
+
+.chat__messages {
+  flex: 1;
+  overflow: scroll;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column-reverse;
+}
+/* .chat__messages::-webkit-scrollbar {
+  display: none;
+} */
+.chat__messages::-webkit-scrollbar {
+  width: 12.5px;
+}
+.chat__messages::-webkit-scrollbar-track {
+  background: rgba(235, 235, 236, 0.1);
+}
+.chat__messages::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.chat__messages::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.chat__input {
+  color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 20px;
+  background-color: #474b53;
+}
+form {
+  color: #fff !important;
+}
+.chat__search {
+  padding: 0px 10px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  outline-width: 0;
+  font-family: "Poppins", sans-serif !important;
+  color: #fff !important;
+  font-size: 12px;
+}
+
+.chat__input > form {
+  flex: 1;
+}
+
+.chat__inputButton {
+  display: none;
+}
+
+.chat__inputIcons > .MuiSvgIcon-root {
+  padding: 3px 5px;
+}

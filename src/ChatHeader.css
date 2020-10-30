@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  padding: 1px;
+  border-bottom: 1px solid #232323;
+  background: #36393f;
+}
+
+.chatHeader__hash {
+  color: gray;
+  font-size: 19px;
+  padding: 10px;
+}
+
+.chatHeader__left > h4 {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.chatHeader__right {
+  display: flex;
+  align-items: center;
+  flex: 0.5;
+  justify-content: space-between;
+}
+
+.chatHeader__right > .MuiSvgIcon-root {
+  padding: 7px;
+  cursor: pointer;
+}
+
+.chatHeader__right > .MuiSvgIcon-root:hover {
+  color: white;
+}
+
+.chatHeader__search {
+  display: flex;
+  align-items: center;
+  color: #aaa;
+  background-color: #2f3135;
+  border-radius: 3px;
+  padding: 3px;
+  font-family: "Poppins", sans-serif !important;
+  width: 300px;
+  height: 30px;
+  font-size: 6px;
+  margin: 3px;
+}
+
+.chatHeader__search > input {
+  background: transparent;
+  outline-width: 0;
+  color: white;
+  border: none;
+}

@@ -1,0 +1,115 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.25;
+  height: 100vh;
+  background-color: #2f3136;
+}
+
+.sidebar__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12.5px;
+  background-color: #2f3136;
+  color: white;
+  border-bottom: 1px solid #232323;
+}
+
+.sidebar__channels {
+  flex: 1;
+  transition: 0.25s;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.sidebar__channels::-webkit-scrollbar {
+  width: 10px;
+}
+.sidebar__channels::-webkit-scrollbar-track {
+  background: rgba(235, 235, 236, 0.1);
+}
+.sidebar__channels::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+.sidebar__channels::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.sidebar__addChannel {
+  cursor: pointer;
+}
+
+.sidebar__addChannel:hover {
+  color: white;
+}
+
+.sidebar__channelsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #2f3135;
+  color: gray;
+  transition: 0.25s;
+}
+
+.siderbar__header {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__voice,
+.sidebar__profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  background-color: #2f3135;
+  padding: 10px;
+  border-top: 1px solid #555;
+}
+
+.sidebar__voiceInfo {
+  flex: 1;
+  padding: 2px;
+}
+
+.sidebar__voiceIcon {
+  color: #4fb185;
+}
+
+.sidebar__voiceInfo > h5 {
+  color: #4fb185;
+}
+
+.sidebar__voiceIcons > .MuiSvgIcon-root {
+  padding: 3px 7.5px;
+}
+
+.sidebar__profileInfo {
+  flex: 1;
+  padding: 2px 6px;
+}
+
+.sidebar__profileInfo > h5 {
+  color: white;
+}
+
+.sidebar__profileIcons > .MuiSvgIcon-root {
+  padding: 3px 7.5px;
+  cursor: pointer;
+}
+.sidebar__profileIcons > .MuiSvgIcon-root:hover {
+  color: #fff;
+}
+
+.MuiIconButton-root {
+  color: gray !important;
+}
+.MuiIconButton-root:hover {
+  color: #fff !important;
+}
+/* .siderbar__header > .MuiIconButton-root {
+  height: 45px;
+  width: 45px;
+} */
